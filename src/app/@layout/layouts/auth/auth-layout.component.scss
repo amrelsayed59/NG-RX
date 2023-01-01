@@ -1,0 +1,27 @@
+nb-layout {
+  background-color: transparent !important;
+  ::ng-deep .layout {
+    background-color: transparent;
+    color: inherit;
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    line-height: inherit;
+  }
+  ::ng-deep nb-layout-header {
+    nav {
+      align-items: baseline;
+      padding: 0;
+    }
+  }
+  ::ng-deep nb-layout-footer {
+    nav {
+      padding: 0 !important;
+      border: 0 !important;
+    }
+  }
+}
+
+nb-layout-column {
+  padding: 0 !important;
+}

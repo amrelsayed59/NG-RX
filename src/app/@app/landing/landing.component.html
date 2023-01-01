@@ -1,0 +1,25 @@
+<div class="counter-section">
+  <div class="counter-head">
+    <h3>Counter</h3>
+    <h1>{{ count }}</h1>
+  </div>
+  <div class="counter-buttons">
+    <button class="btn" (click)="increase()">Increase</button>
+    <button class="btn" (click)="reset()">Reset</button>
+    <button class="btn" (click)="decrease()">Decrease</button>
+  </div>
+</div>
+
+<div class="counter-section">
+  <div class="counter-head">
+    <h3>Todo List</h3>
+  </div>
+  <div class="counter-buttons">
+    <button class="btn" (click)="load()">Click</button>
+    <ul class="list-unstyled">
+      <li class="todo-li" *ngFor="let item of todoArray | slice : 0 : 10">
+        {{ item.title }}
+      </li>
+    </ul>
+  </div>
+</div>

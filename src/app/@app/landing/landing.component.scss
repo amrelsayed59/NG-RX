@@ -1,0 +1,31 @@
+.counter-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+    background: #f8f9fa;
+    margin-block: 3rem;
+    padding-block: 3rem;
+    flex-direction: column;
+    text-align: center;
+    + .counter-head {
+        h3,
+        h1 {
+            font-weight: bold;
+        }
+    }
+    button {
+        background: #212529;
+        color: white;
+        margin-inline: 0.2rem;
+    }
+}
+
+.todo-li {
+    background: #cbcbcb3b;
+    padding: 0.5rem;
+    border-radius: 5px;
+    margin-block: 1rem;
+    box-shadow: 1px 2px 4px 0px #dbdbdb;
+}
